@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <h1 class="head">Search Movie</h1>
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Type movie title..." required/>
+      <button onclick="movie()"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </div>
+    <h5 id="error">
+    </h5>
+    <div id="movies">
+      <img id="poster" />
+      <div id="details">
+          <h1 id="title"></h1>
+          <p id="year"></p>
+          <p id="imdb"></p>
+          <p id="director"></p>
+          <p id="writer"></p>
+          <p id="actors"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
